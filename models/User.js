@@ -20,6 +20,22 @@ const UserSchema = new mongoose.Schema({
         min: 6,
 
     },
+    profilePicture:{
+        type: String,
+        default: "",
+    },
+    followers:{
+        type: Array,
+        default: []
+    },
+    following:{
+        type: Array,
+        default: []
+    },
+    isAdmin:{
+        type: Boolean,
+        default: false,
+    },
 }, 
  {timestamps: true}
 );
